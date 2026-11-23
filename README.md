@@ -10,35 +10,32 @@ of Monday 23 November 2026, as a 1024x1024 PNG.
 ## What it draws
 
 **THE WORLD TODAY — Monday 23 November 2026**, a front page with
-37 dated stories across 9 regions:
+37 stories across 9 regions:
 
-- Lead: COP31 climate talks in Antalya collapse as the EU rejects a
-  final draft that never mentions fossil fuels; after two days of
-  overtime, the longest COP on record, no deal is reached.
-- Iran strikes US bases in Bahrain and two tankers in the Strait of
-  Hormuz as a US blockade enters its 130th day; 25 tankers hit in a
-  week, Brent crude at $92.57.
-- Russian drones kill four near Kyiv and flatten a block in Dymer,
-  where 14 are missing; 186 drones came overnight, 161 shot down.
-- Briefs: Democrats clinch 258 House seats, the most since 1992;
-  Liverpool thrash 10-man Man Utd 4-0 at Anfield; India post a
-  record 720/9 in the Wellington Test; South Korea's education
-  minister resigns over an AI cheating scandal; 3 dead and 50
-  missing in an Indonesia factory fire; a Russian cargo ship burns
-  off Finland; Verstappen wins the Las Vegas Grand Prix.
-- A stats strip (37 stories, 9 regions, 25 tankers, 186 drones,
-  258 seats, Brent $92.57), a markets strip (S&P 500 6,910.39
-  -3.70%, Nasdaq 22,617.73 -5.28%, Dow 48,147.33 -1.93%, VIX 35.89,
-  gold $3,515.40) and a world map marking 20 places.
+- Lead: COP31 climate talks in Antalya collapse with no deal after
+  the EU rejects a draft that never mentions fossil fuels.
+- Iran strikes a US base in Bahrain and two tankers are hit in the
+  Strait of Hormuz; Gulf states condemn the attacks.
+- A Russian drone hits flats in Dymer near Kyiv: 2 killed, 14 missing.
+- A dotted world map marking the day's datelines, from Sinaloa to
+  Sydney, and BepiColombo entering orbit around Mercury after an
+  eight-year voyage.
+- Briefs: the AI sell-off and S&P 500 correction; Mexico captures
+  "El Chapo Isidro"; 50 missing in the Banten factory fire; NATO to
+  meet over missiles hitting Poland; Nepal's PM meets Modi in Delhi;
+  South Korea's education minister quits in an AI-cheating scandal;
+  India post a record 720/9 in Wellington; and 27 more.
+- A markets strip: S&P 500 6,910, Nasdaq 22,618, Dow 48,147,
+  Brent $92.57, gold $3,538 (Friday closes).
 
 ## How it works
 
 `main.py` is pure Python 3 standard library. It draws every pixel
-itself — a hand-built vector serif font (strokes on a 9x16 grid,
-with serif ticks on vertical stems), gradient skies, shaded
-illustrations, a world map and a hand-written PNG encoder
-(`zlib` + `struct`) — with no network, no clock and no randomness,
-so two runs write byte-identical output.
+itself — a hand-built stroke font with serif feet, shaded
+illustrations, a dotted world map, and a hand-written PNG encoder
+(`zlib` + `struct`) — with no network, no clock and no randomness.
+The page is rendered at 2x and downsampled for clean edges, so two
+runs write byte-identical output.
 
 ## Run it
 
